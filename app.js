@@ -1,2 +1,4 @@
+const prompt = require('prompt-sync')();
 const franc = require('franc');
-console.log(franc.all('hello my name is cam'))
+const userInput = prompt('Type a word or sentence and I will guess the language:')
+console.log(franc(userInput))
