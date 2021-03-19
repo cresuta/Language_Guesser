@@ -1,5 +1,7 @@
 const franc = require('franc');
 const langs = require('langs');
+const input = process.argv[2];
+const langCode = franc(input)
+const languageName = langs.where("3",langCode)
 
-const langCode = franc('Alle menslike wesens word vry')
-console.log(langs.where("3", langCode).name);
+console.log(languageName.name)
